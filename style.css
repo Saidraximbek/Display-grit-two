@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(39, 2.5%);
+  grid-template-rows: repeat(19, 5%);
+  width: 1000px;
+  height: 500px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px black solid;
+  gap: 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.one {
+  grid-area: 1/ 1/ 10/ 20;
+  background-color: #5b32a0;
+}
+
+.two {
+  grid-area: 1/ 21/ 10/ 30;
+  background-color: #3a4456;
+}
+
+.three {
+  grid-area: 1/ 31/ 20/ 40;
+  background-color: #cccccc;
+}
+
+.four {
+  grid-area: 11/ 1/ 20/ 10;
+  background-color: #cccccc;
+}
+
+.five {
+  grid-area: 11/ 11/ 20/ 30;
+  background-color: #141a24;
+}
+
+span {
+  color: antiquewhite;
+}
+
+.person--item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+  padding: 10px;
+}
+
+.img--item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.text--item {
+  font-size: 10px;
+  color: rgb(245, 234, 213);
+}
+
+.title--item {
+  color: black;
+}
+
+.name--item--two {
+  color: black;
+}
+
+.text--item--two {
+  font-size: 13px;
+  color: black;
+}
